@@ -2,13 +2,12 @@ import appStylesHref from './app.css';
 import { createEmptyContact, getContacts } from './data';
 import {
 	type LinksFunction,
-	LoaderFunctionArgs,
+	type LoaderFunctionArgs,
 	json,
 	redirect,
 } from '@remix-run/node';
 import {
 	Form,
-	Link,
 	Links,
 	LiveReload,
 	Meta,

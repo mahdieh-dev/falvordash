@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+#register {
+  background-color: rgb(255, 187, 0);
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  padding-left: 20%;
+  position: relative;
+}
+#register img {
+  width: 40vw;
+  box-shadow: 0px 12px 40px #000;
+  border-radius: 8px;
+}
+#register form {
+  background-color: #fff;
+  padding: 3vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 12px 40px #000;
+  border-radius: 8px;
+  margin-left: -20%;
+}
+#register form #formInputWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  align-items: flex-start;
+  padding: 0;
+  color: gray;
+}
+#register form #formInputWrapper:first-of-type p > label {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+#register form #formInputWrapper #inputError {
+  color: #f00;
+  font-size: 0.8rem;
+  line-height: 0.1rem;
+}
+#register form #formInputWrapper input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #000;
+  font-size: 1rem;
+}
+#register form #formInputWrapper input:focus {
+  border: none;
+  outline: none;
+  border-bottom: 3px solid rgb(255, 187, 0);
+  color: #000;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+#register form button[type=submit] {
+  width: 100%;
+  background-color: orangered;
+  color: #fff;
+  margin-top: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  * {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+  #register {
+    padding-left: 0;
+    flex-direction: column;
+    padding-top: 10%;
+    width: 100%;
+  }
+  #register img {
+    width: 100%;
+    height: auto;
+  }
+  #register form {
+    width: 100%;
+    left: 0;
+    margin-top: -10%;
+    margin-left: 0;
+    position: relative;
+    padding: 16px;
+  }
+  #register form button[type=submit] {
+    width: 90%;
+  }
+}/*# sourceMappingURL=index.css.map */

@@ -6,13 +6,13 @@ import {
 	RouterProvider,
 } from 'react-router-dom';
 
-import Register from '@/routes/register.tsx';
-import Root from '@/routes/root.tsx';
+import Root from '@/routes/landing';
+import Register from '@/routes/register';
 
 import Dashboard from './routes/dashboard';
 import { ERoutes } from './typescript/enums/ERoutes';
 
-import '@/index.css';
+import './index.css';
 
 localStorage.clear();
 
